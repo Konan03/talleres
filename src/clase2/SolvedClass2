@@ -1,0 +1,19 @@
+Explicación del Código:
+Clase Principal (FibonacciComparison):
+
+El método main es el punto de entrada del programa donde se ejecutan las pruebas de los dos métodos iterativos que calculan el enésimo número de Fibonacci.
+Método fibonacciBasic (Iterativo Básico):
+
+Este método utiliza tres variables (a, b, sum) para calcular la serie de Fibonacci. Empieza con a = 0 y b = 1, y en cada iteración suma estos dos valores para obtener el siguiente número en la serie.
+La variable a se actualiza a b, y b se actualiza a sum en cada paso, avanzando en la serie.
+Método fibonacciOptimized (Iterativo Optimizado):
+
+Este método también usa un bucle iterativo, pero optimiza el cálculo utilizando una técnica de actualización más compacta. Calcula el siguiente valor de b directamente y ajusta a en una sola línea usando b - a.
+Este método puede ser más eficiente en algunos casos porque realiza menos operaciones.
+Medición del Tiempo de Ejecución (measureAverageTime):
+
+Este método toma un algoritmo (implementado como un Runnable) y lo ejecuta múltiples veces, midiendo el tiempo de ejecución cada vez. Luego, calcula el tiempo promedio dividiendo el tiempo total por el número de repeticiones.
+Utiliza System.nanoTime() para obtener una medición precisa del tiempo en nanosegundos.
+Resultados:
+
+El programa imprime el tiempo promedio en nanosegundos para ambos métodos. Esto te permitirá comparar cuál de los dos es más eficiente para calcular el enésimo número de Fibonacci.
