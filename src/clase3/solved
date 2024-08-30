@@ -1,0 +1,43 @@
+Ejemplo 1: Complejidad Constante O(1)
+Ejemplo 2: Complejidad Lineal O(n)
+Ejemplo 3: Complejidad Cuadrática O(n^2)
+Ejemplo 4: Complejidad Logarítmica O(log n)
+Ejemplo 5: Complejidad Exponencial O(2^n)
+Ejemplo 6: Complejidad Linealítica O(n log n)
+
+//////solved java////////
+import java.util.HashSet;
+
+public boolean hasDuplicate(int[] arr) {
+    HashSet<Integer> seen = new HashSet<>();
+    for (int element : arr) {
+        if (seen.contains(element)) {
+            return true;
+        }
+        seen.add(element);
+    }
+    return false;
+}
+
+
+//////solved js////////
+function hasDuplicate(arr) {
+    let seen = new Set();
+    for (let element of arr) {
+        if (seen.has(element)) {
+            return true;
+        }
+        seen.add(element);
+    }
+    return false;
+}
+
+
+///////solved python///////
+def has_duplicate(arr):
+    seen = set()
+    for element in arr:
+        if element in seen:
+            return True
+        seen.add(element)
+    return False
